@@ -1,0 +1,154 @@
+*{
+    text-align: center;
+}
+#navbar {
+    display: flex;
+   justify-content: space-between;
+    padding-left: 4%;
+    padding-right: 4%;
+    border: solid 2px black;
+  }
+body{
+
+  background-color: rgb(87, 216, 248);
+  color: rgb(95, 5, 155);
+
+}
+  #options {
+    display: flex;
+    justify-content: space-between;
+  }
+
+  #options h3 {
+    padding-left: 30px;
+    padding-right: 10px;
+  }
+
+  .img{
+
+    width: 80%;
+
+  }
+  #container1>p{
+      text-align: left;
+      width:200px
+  }
+
+
+  #container{
+    
+    display: grid;
+    grid-template-columns: repeat(4, 25%);
+    grid-gap: 20px;
+    justify-content: center;
+    padding: 5%;
+    width:80%;
+    margin: auto;
+    border:1px solid green;
+    
+    padding-left:5%;
+
+  }
+
+  #search_result{
+
+    width: 400px;
+    margin: auto;
+    
+    box-sizing: border-box;
+    padding: 10px;
+
+  }
+  a{
+
+    color: rgb(233, 44, 154);
+
+  }
+
+  .search_img{
+
+    width: 370px;
+    border-radius: 10px;
+
+  }
+
+  #input{
+
+    
+    margin-top: 10px;
+    width: 400px;
+    
+    margin: auto;
+
+  }
+  input{
+
+    border-radius: 5px;
+    margin-bottom: 20px;
+    padding: 10px;
+    height: 25px;
+    width: 400px;
+    margin-right: auto;
+
+  }
+  button{
+
+    height: 30px;
+
+  }
+
+  
+
+  #contain{
+    
+    width: 700px;
+    margin: auto;
+}
+#contain img{
+
+  border-radius: 30px;
+  width: 300px;
+  margin-left: 200px;
+  
+
+}
+  
+
+  #search_result {
+    height: 300px;
+    width: 400px;
+    /* border: 1px solid black; */
+    overflow: scroll;
+    border-top:none;
+}
+
+#search_result::-webkit-scrollbar{
+    display: none;
+}
+
+  .each-div{
+    /* border: 1px solid red; */
+    margin-top: 5px;
+    display: flex;
+    flex-direction: row;
+
+}
+.each-div > img{
+    width: 90px;
+}
+
+.details-div{
+    display: flex;
+    flex-direction: column;
+    font-size: 16px;
+    font-weight: 900;
+    margin-left: 10px;
+
+}
+
+#today-spcl{
+  width: 200px;
+  margin: auto;
+  color: yellow;
+  
+}

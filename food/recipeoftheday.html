@@ -1,0 +1,62 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>recipieoftheday</title>
+  </head>
+
+  <link rel="stylesheet" href="style.css">
+  
+  <body>
+
+    <div id="navbar"></div>
+
+    
+
+    <h1 id="today-spcl">recipie of the day</h1>
+
+    <div id="container1"></div>
+
+    
+
+    
+    
+  </body>
+
+</html>
+
+
+
+<script type="module">
+
+  import navbar from './components/navbar.js';
+  
+
+  let navbar_div = document.getElementById("navbar");
+    navbar_div.innerHTML = navbar();
+import {getData, random_food} from './scripts/showdata.js'
+
+
+
+  let response = getData(`https://www.themealdb.com/api/json/v1/1/random.php`)
+
+  .then((res) => {
+    console.log('res:', res)
+    console.log('res-meals:', res.meals)
+
+    let search_result = document.getElementById("container1")
+
+    random_food(res.meals, search_result) 
+
+    
+  })
+  .catch((err) => {
+
+    console.log('err:', err)
+
+  })
+
+
+</script>
